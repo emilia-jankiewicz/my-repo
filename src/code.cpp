@@ -4,10 +4,11 @@
 
 using namespace std;
 
-bool check(int n)
+bool check(long n)
 {
     string N = to_string(n);
-    int counting = 0; string original_n = N; 
+    long counting = 0; 
+    string original_n = N; 
     bool is_armstrong = false; 
 
     for (int i = 0; i < N.length(); i++)

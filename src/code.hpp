@@ -2,4 +2,4 @@
 #include <string>
 using namespace std;
 
-bool check(int n);
+bool check(long n);
