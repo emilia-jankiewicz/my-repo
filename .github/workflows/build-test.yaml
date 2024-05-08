@@ -7,36 +7,27 @@ jobs:
   test:
     name: "Test"
     runs-on: ubuntu-latest
-
     steps:
-
-    - name: "Checkout"
-      uses: actions/checkout@v2
-
-    - name: "Setup gcc"
-      shell: bash
-      run: |
-        sudo apt update
-        sudo apt install gcc-10 g++-10
-
-     - name: "Test project"
-      run: make test
-
+      - name: "Checkout"
+        uses: actions/checkout@v2
+      - name: "Setup gcc"
+        shell: bash
+        run: |
+          sudo apt update
+          sudo apt install gcc-10 g++-10
+      - name: "Test project"
+        run: make test
 
   build:
     name: "Build"
     runs-on: ubuntu-latest
-
     steps:
-
-    - name: "Checkout"
-      uses: actions/checkout@v2
-
-     - name: "Setup gcc"
-      shell: bash
-      run: |
-        sudo apt update
-        sudo apt install gcc-10 g++-10
-
-     - name: "Build project"
-      run: make build
+      - name: "Checkout"
+        uses: actions/checkout@v2
+      - name: "Setup gcc"
+        shell: bash
+        run: |
+          sudo apt update
+          sudo apt install gcc-10 g++-10
+      - name: "Build project"
+        run: make build
