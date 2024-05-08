@@ -11,7 +11,7 @@ bool check(long n)
     string original_n = N; 
     bool is_armstrong = false; 
 
-    for (int i = 0; i < N.length(); i++)
+    for (string::size_type i = 0; i < N.length(); i++)
     {
         counting += pow(N[i] - '0', N.length());
     }
