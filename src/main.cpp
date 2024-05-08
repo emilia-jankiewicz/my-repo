@@ -5,16 +5,23 @@ using namespace std;
 
 int main()
 {
-    cout << "Check if a number is narcissistic. Enter an integere number: \n";
-    int Number;
+    cout << "Check if a positive number is narcissistic. Enter a positive integer: \n";
+    long Number;
     cin >> Number;
-    if (check(Number) == 1)
+    if (Number < 0)
     {
-        cout << "Number " << Number << " is a narcissistic number. \n";
+        cout << "You've enetered a negative number. Number must be a positive integer. \n";
     }
     else
     {
-        cout << "Number " << Number << " is not a narcissistic number. \n";
+        if (check(Number) == 1)
+        {
+            cout << "Number " << Number << " is a narcissistic number. \n";
+        }
+        else
+        {
+            cout << "Number " << Number << " is not a narcissistic number. \n";
+        } 
     }
     return 0;
 }
