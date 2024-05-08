@@ -1,3 +1,3 @@
-# WSB Git project
+# WSB Merito Git project
 
-Completeness for grade: +
+Completeness for grade: +++
